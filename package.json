@@ -1,0 +1,21 @@
+{
+  "name": "av",
+  "version": "1.0.0",
+  "description": "A sample Node.js app using Express 4",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "LeanCloud",
+    "LeanEngine",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express3-handlebars": "^0.5.2",
+    "leanengine": "^0.2.0"
+  }
+}
