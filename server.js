@@ -10,6 +10,7 @@
 // AV.initialize(APP_ID, APP_KEY, MASTER_KEY);
 
 var express = require('express');
+var cloud = require('./cloud');
 var handlebars = require('express3-handlebars').create({defaultLayout: 'main'});
 
 var app = express();
@@ -17,8 +18,10 @@ app.engine('handlebars', handlebars.engine);
 app.set('views', 'views');
 app.set('view engine', 'handlebars');
 
+app.use(cloud);
 
-app.set('port', process.env.PORT || 3000);
+
+app.set('port', process.env.LC_APP_PORT || 3000);
 
 // app.use(express.static(__dirname + '/public'));
 
