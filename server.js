@@ -14,7 +14,7 @@ var handlebars = require('express3-handlebars').create({defaultLayout: 'main'});
 
 var app = express();
 app.engine('handlebars', handlebars.engine);
-app.set('views', '/views');
+app.set('views', 'views');
 app.set('view engine', 'handlebars');
 
 
